@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Create User</h1>
+    <br>
+    <button type="button" class="btn btn-warning" (click)="back()">Back</button>
+</div>
+<br>
+<div class="container">
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">FullName</label>
+          <input type="text" class="form-control"  placeholder="Enter your full name" [(ngModel)] = "user.userName" name="userName">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Address</label>
+          <input type="text" class="form-control"  placeholder="Enter your address" [(ngModel)] = user.userAddress name="userAddress">
+        </div>
+        <button type="button" class="btn btn-primary" (click)="createUser()">Submit</button>
+      </form>
+</div>
+
